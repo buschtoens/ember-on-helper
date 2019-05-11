@@ -1,4 +1,4 @@
-import { SUPPORTS_EVENT_OPTIONS } from 'ember-on-modifier/utils/event-listener';
+import { SUPPORTS_EVENT_OPTIONS } from 'ember-on-helper/utils/event-listener';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | event-listener', function() {

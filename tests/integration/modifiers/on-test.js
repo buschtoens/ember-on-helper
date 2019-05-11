@@ -14,7 +14,7 @@ import { gte } from 'ember-compatibility-helpers';
 import {
   testIfOnModifierPolyfilled,
   onModifierPolyfilled
-} from '../../helpers/ember-on-modifier-polyfill';
+} from '../../helpers/ember-on-helper-polyfill';
 
 module('Integration | Modifier | on', function(hooks) {
   setupRenderingTest(hooks);
@@ -186,7 +186,7 @@ module('Integration | Modifier | on', function(hooks) {
       this.handler = event => {
         assert.expectAssertion(
           () => event.preventDefault(),
-          `ember-on-modifier: You marked this listener as 'passive', meaning that you must not call 'event.preventDefault()'.`
+          `ember-on-helper: You marked this listener as 'passive', meaning that you must not call 'event.preventDefault()'.`
         );
       };
 
@@ -210,7 +210,7 @@ module('Integration | Modifier | on', function(hooks) {
     setupOnerror(function(error) {
       assert.strictEqual(
         error.message,
-        "Assertion Failed: ember-on-modifier: Provided invalid event options ('nope', 'foo') to 'click' event listener. Only these options are valid: 'capture', 'once', 'passive'",
+        "Assertion Failed: ember-on-helper: Provided invalid event options ('nope', 'foo') to 'click' event listener. Only these options are valid: 'capture', 'once', 'passive'",
         'error is thrown'
       );
     });
@@ -236,11 +236,11 @@ module('Integration | Modifier | on', function(hooks) {
     assert.counts({ adds: 0, removes: 0 });
 
     assert.verifySteps([
-      "Assertion Failed: ember-on-modifier: '10' is not a valid callback. Provide a function.",
-      "Assertion Failed: ember-on-modifier: 'undefined' is not a valid callback. Provide a function.",
-      "Assertion Failed: ember-on-modifier: '' is not a valid event name. It has to be a string with a minimum length of 1 character.",
-      "Assertion Failed: ember-on-modifier: '10' is not a valid event name. It has to be a string with a minimum length of 1 character.",
-      "Assertion Failed: ember-on-modifier: 'undefined' is not a valid event name. It has to be a string with a minimum length of 1 character."
+      "Assertion Failed: ember-on-helper: '10' is not a valid callback. Provide a function.",
+      "Assertion Failed: ember-on-helper: 'undefined' is not a valid callback. Provide a function.",
+      "Assertion Failed: ember-on-helper: '' is not a valid event name. It has to be a string with a minimum length of 1 character.",
+      "Assertion Failed: ember-on-helper: '10' is not a valid event name. It has to be a string with a minimum length of 1 character.",
+      "Assertion Failed: ember-on-helper: 'undefined' is not a valid event name. It has to be a string with a minimum length of 1 character."
     ]);
   });
 

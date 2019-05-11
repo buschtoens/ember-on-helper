@@ -25,8 +25,8 @@ module('Integration | Helper | prevent-default', function(hooks) {
     'prevent-default is stripped from the build',
     function(assert) {
       assert.notOk(
-        require.has('ember-on-modifier/helpers/prevent-default'),
-        'ember-on-modifier `prevent-default` is stripped'
+        require.has('ember-on-helper/helpers/prevent-default'),
+        'ember-on-helper `prevent-default` is stripped'
       );
       assert.ok(
         this.owner.lookup('helper:prevent-default').isHelperFactory,

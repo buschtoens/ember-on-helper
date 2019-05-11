@@ -1,1 +1,1 @@
-export { default } from 'ember-on-modifier/modifiers/on';
+export { default } from 'ember-on-helper/modifiers/on';

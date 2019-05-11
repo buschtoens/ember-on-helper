@@ -27,7 +27,7 @@ const assertValidEventOptions =
       );
 
       assert(
-        `ember-on-modifier: Provided invalid event options (${joinOptions(
+        `ember-on-helper: Provided invalid event options (${joinOptions(
           invalidOptions
         )}) to '${eventName}' event listener. Only these options are valid: ${joinOptions(
           ALLOWED_EVENT_OPTIONS
@@ -40,18 +40,18 @@ const assertValidEventOptions =
 function setupListener(element, eventName, callback, eventOptions, params) {
   if (DEBUG) assertValidEventOptions(eventOptions, eventName);
   assert(
-    `ember-on-modifier: '${eventName}' is not a valid event name. It has to be a string with a minimum length of 1 character.`,
+    `ember-on-helper: '${eventName}' is not a valid event name. It has to be a string with a minimum length of 1 character.`,
     typeof eventName === 'string' && eventName.length > 1
   );
   assert(
-    `ember-on-modifier: '${callback}' is not a valid callback. Provide a function.`,
+    `ember-on-helper: '${callback}' is not a valid callback. Provide a function.`,
     typeof callback === 'function'
   );
   deprecate(
-    `ember-on-modifier: Passing additional arguments to be partially applied to the event listener is deprecated in order to comply with the RFC. Use the '{{fn}}' helper instead: https://www.npmjs.com/package/ember-fn-helper`,
+    `ember-on-helper: Passing additional arguments to be partially applied to the event listener is deprecated in order to comply with the RFC. Use the '{{fn}}' helper instead: https://www.npmjs.com/package/ember-fn-helper`,
     !Array.isArray(params) || params.length === 0,
     {
-      id: 'ember-on-modifier.partial-application',
+      id: 'ember-on-helper.partial-application',
       until: '1.0.0',
       url:
         'https://github.com/emberjs/rfcs/blob/master/text/0471-on-modifier.md'

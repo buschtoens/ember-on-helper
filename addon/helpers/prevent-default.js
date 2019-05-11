@@ -7,7 +7,7 @@ export function preventDefault([handler]) {
     '`(prevent-default)` has been moved to `ember-event-helpers`.',
     false,
     {
-      id: 'ember-on-modifier.prevent-default',
+      id: 'ember-on-helper.prevent-default',
       until: '1.0.0',
       url: 'https://github.com/buschtoens/ember-event-helpers'
     }

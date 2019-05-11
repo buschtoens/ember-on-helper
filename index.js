@@ -20,7 +20,7 @@ module.exports = {
 
     if (this.hasNativeOnModifier && this.parent === this.project) {
       let message =
-        'The `{{on}}` modifier is available natively since Ember 3.11.0-beta.1. You can remove `ember-on-modifier` from your `package.json`.';
+        'The `{{on}}` modifier is available natively since Ember 3.11.0-beta.1. You can remove `ember-on-helper` from your `package.json`.';
 
       if (!this.hasEventHelpers) {
         message +=

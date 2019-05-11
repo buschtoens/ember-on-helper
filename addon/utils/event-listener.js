@@ -82,7 +82,7 @@ export function addEventListener(element, eventName, callback, eventOptions) {
       ? function(event) {
           event.preventDefault = () => {
             assert(
-              `ember-on-modifier: You marked this listener as 'passive', meaning that you must not call 'event.preventDefault()'.`
+              `ember-on-helper: You marked this listener as 'passive', meaning that you must not call 'event.preventDefault()'.`
             );
           };
           return callback.call(this, event);

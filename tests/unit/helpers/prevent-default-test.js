@@ -4,7 +4,7 @@ import { skipIfEventHelpersInstalled } from '../../helpers/ember-event-helpers';
 
 module('Unit | Helper | prevent-default', function(hooks) {
   hooks.before(function() {
-    this.preventDefault = require('ember-on-modifier/helpers/prevent-default').preventDefault;
+    this.preventDefault = require('ember-on-helper/helpers/prevent-default').preventDefault;
   });
 
   skipIfEventHelpersInstalled(

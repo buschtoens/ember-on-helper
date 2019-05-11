@@ -1,17 +1,17 @@
 {
-  "name": "ember-on-modifier",
-  "version": "0.12.3",
-  "description": "{{on eventName this.someAction}} element modifier",
+  "name": "ember-on-helper",
+  "version": "0.0.0",
+  "description": "{{on eventTarget eventName someAction}} template helper",
   "keywords": [
     "ember-addon",
-    "ember-modifier",
-    "ember-element-modifier",
+    "ember-helper",
+    "ember-template-helper",
     "on",
     "event",
     "listener",
     "addEventListener"
   ],
-  "repository": "buschtoens/ember-on-modifier",
+  "repository": "buschtoens/ember-on-helper",
   "license": "MIT",
   "author": "Jan Buschtöns <jan@buschtoens.me> (https://jan.buschtoens.me)",
   "directories": {
@@ -29,8 +29,7 @@
   "dependencies": {
     "broccoli-funnel": "^2.0.2",
     "ember-cli-babel": "^7.7.3",
-    "ember-cli-version-checker": "^3.1.3",
-    "ember-modifier-manager-polyfill": "^1.0.3"
+    "ember-cli-version-checker": "^3.1.3"
   },
   "devDependencies": {
     "@clark/eslint-config-ember": "^0.5.1",
