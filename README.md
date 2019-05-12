@@ -112,7 +112,7 @@ They work exactly the same way as `{{on}}` and also accept event options.
 
 ### Listening to Multiple Events
 
-You can use the `{{on}}` helper multiple times in the same element, even for
+You can use the `{{on}}` helper multiple times in the same template, even for
 the same event.
 
 ```hbs
