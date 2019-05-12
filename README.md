@@ -33,9 +33,9 @@ outside of the control of your template, e.g. `document` or `window`.
 
 > ⚠️👉 **WARNING:** Do not overuse this helper. If you want to bind to an
 > element that _is_ controlled by Glimmer, but maybe just not by the current
-> template, _do not_ reach for a manual `document.querySelect()`. Instead, think
-> about your current template and state setup and try to use a true "Data Down,
-> Actions Up" pattern or use a shared `Service` as a message bus.
+> template, _do not_ reach for a manual `document.querySelector()`. Instead,
+> think about your current template and state setup and try to use a true "Data
+> Down, Actions Up" pattern or use a shared `Service` as a message bus.
 
 ## Usage
 
