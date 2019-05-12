@@ -1,6 +1,6 @@
 {
   "name": "ember-on-helper",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "{{on eventTarget eventName someAction}} template helper",
   "keywords": [
     "ember-addon",
