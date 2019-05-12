@@ -112,8 +112,8 @@ They work exactly the same way as `{{on}}` and also accept event options.
 
 ### Listening to Multiple Events
 
-You can use the `{{on}}` helper multiple times in the same template, even for
-the same event.
+You can use the `{{on}}` helper multiple times in the same template and for the
+same event target, even for the same event.
 
 ```hbs
 {{on this.someElement "click" this.onClick}}
