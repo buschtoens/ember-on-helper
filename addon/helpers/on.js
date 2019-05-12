@@ -39,6 +39,12 @@ const assertValidEventOptions =
 function setupListener(eventTarget, eventName, callback, eventOptions) {
   if (DEBUG) assertValidEventOptions(eventOptions, eventName);
   assert(
+    `ember-on-helper: '${eventTarget}' is not a valid event target. It has to be an Element or an object that conforms to the EventTarget interface.`,
+    eventTarget &&
+      typeof eventTarget.addEventListener === 'function' &&
+      typeof eventTarget.removeEventListener === 'function'
+  );
+  assert(
     `ember-on-helper: '${eventName}' is not a valid event name. It has to be a string with a minimum length of 1 character.`,
     typeof eventName === 'string' && eventName.length > 1
   );

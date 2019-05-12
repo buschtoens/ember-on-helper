@@ -233,6 +233,8 @@ module('Integration | Helper | on', function(hooks) {
     await testExpression(`{{on this.testElement "click"}}`);
     await testExpression(`{{on this.testElement "" undefined}}`);
     await testExpression(`{{on this.testElement 10 undefined}}`);
+    await testExpression(`{{on this.testElement}}`);
+    await testExpression(`{{on null 10 undefined}}`);
     await testExpression(`{{on}}`);
 
     assert.counts({ adds: 0, removes: 0 });
@@ -242,7 +244,9 @@ module('Integration | Helper | on', function(hooks) {
       "Assertion Failed: ember-on-helper: 'undefined' is not a valid callback. Provide a function.",
       "Assertion Failed: ember-on-helper: '' is not a valid event name. It has to be a string with a minimum length of 1 character.",
       "Assertion Failed: ember-on-helper: '10' is not a valid event name. It has to be a string with a minimum length of 1 character.",
-      "Assertion Failed: ember-on-helper: 'undefined' is not a valid event name. It has to be a string with a minimum length of 1 character."
+      "Assertion Failed: ember-on-helper: 'undefined' is not a valid event name. It has to be a string with a minimum length of 1 character.",
+      "Assertion Failed: ember-on-helper: 'null' is not a valid event target. It has to be an Element or an object that conforms to the EventTarget interface.",
+      "Assertion Failed: ember-on-helper: 'undefined' is not a valid event target. It has to be an Element or an object that conforms to the EventTarget interface."
     ]);
   });
 
