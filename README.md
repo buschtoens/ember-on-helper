@@ -102,7 +102,7 @@ anyway.
 
 You will often want to use the `{{on}}` helper to listen to events which are
 emitted on `window` or `document`. Because providing access to these globals in
-the template as shown in **[Simple Example][#simple-example]** is quite
+the template as shown in **[Simple Example](#simple-example)** is quite
 cumbersome, `{{on}}` brings two friends to the party:
 
 - `{{on-document eventName eventListener}}`
