@@ -761,19 +761,19 @@
     eslint-plugin-ember-best-practices "^1.1.1"
     lodash.merge "^4.6.1"
 
-"@clark/eslint-config-node@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.2.0.tgz#d38548e84f6149e0c726e3454fda9e016110246f"
-  integrity sha512-3UA9aLyWpp7ghCHN+xQz1PcxoEU1z+FE2HQ6fvfuqdLkgw3IBFXO661YM4yNYZiG7AC16n4UV10ZPKZw1NadtA==
+"@clark/eslint-config-node@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.2.1.tgz#2f876e913082a9c6de12b7b1debe00e05bb8f7fc"
+  integrity sha512-yVa9rmIr7F/CP2qeEFys9YmTJvBDFNBsfQPwsenf9F2o4j3WRUFigMYeQ9G7QI8UNfMo2LDASU8ROVEXkMoo0g==
   dependencies:
-    "@clark/eslint-config" "^1.2.0"
+    "@clark/eslint-config" "^1.2.1"
     eslint-plugin-node "^9.1.0"
     lodash.merge "^4.6.1"
 
-"@clark/eslint-config@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.2.0.tgz#5f4d8ed5e9194efac151188f279f8a59c80c8aa4"
-  integrity sha512-+LdN4Iv7KBiVwNvemGcaXapUfT1I+pSlzTlF5boJvw2DB3Jyx06JwjYpr4nbhgNFbw683hOHA6PvR2W5NP0IVA==
+"@clark/eslint-config@^1.2.0", "@clark/eslint-config@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.2.1.tgz#ee2ea3c7cb6276964983e7f09c0d965bd6731e8b"
+  integrity sha512-l8/FWWGnxPcopmWOqIXLvpgeIQjXUuGsb9P00umiOvn6CQCctzATOdoAYCM+qnPEaiI5p7ZUxqbxysNXdZTawQ==
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
     eslint-config-prettier "^4.3.0"
@@ -781,8 +781,8 @@
     eslint-plugin-import "^2.17.3"
     eslint-plugin-node "^9.1.0"
     eslint-plugin-prettier "^3.1.0"
-    eslint-plugin-unicorn "^9.0.0"
-    prettier "^1.17.1"
+    eslint-plugin-unicorn "^9.1.0"
+    prettier "^1.18.2"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
@@ -3734,10 +3734,10 @@ eslint-plugin-prettier@^3.1.0:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-unicorn@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-9.0.0.tgz#53e0a9043ad27f11f10846603915251d03584165"
-  integrity sha512-D0NbpmL6paSpwVrwdc/eePpp2KyPU9R+rEXKN+EjE8YqhELwF8wvixcpY5BenztzT2KZQiWWWyHfZmM9bTyRpA==
+eslint-plugin-unicorn@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-9.1.0.tgz#b5ec3c65ae28d8163f6f6b340b183e11862ec295"
+  integrity sha512-OknjtY1daSxHd60KsXBxP9d2LExA3JZ2XuPOtqSZbLjwGaKjZXYMCaPI2xg70Qc791rXoi0pW4UEzVCnwlRi+Q==
   dependencies:
     clean-regexp "^1.0.0"
     eslint-ast-utils "^1.0.0"
@@ -3748,6 +3748,7 @@ eslint-plugin-unicorn@^9.0.0:
     lodash.snakecase "^4.0.1"
     lodash.topairs "^4.3.0"
     lodash.upperfirst "^4.2.0"
+    regexpp "^2.0.1"
     reserved-words "^0.1.2"
     safe-regex "^2.0.1"
 
@@ -6618,10 +6619,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^1.17.1:
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
-  integrity sha512-TzGRNvuUSmPgwivDqkZ9tM/qTGW9hqDKWOE9YHiyQdixlKbv7kvEqsmDPrcHJTKwthU774TQwZXVtaQ/mMsvjg==
+prettier@^1.18.2:
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
+  integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
 
 printf@^0.5.1:
   version "0.5.1"
